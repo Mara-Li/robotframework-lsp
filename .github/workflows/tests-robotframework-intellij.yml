@@ -1,6 +1,7 @@
 name: Tests - Intellij
 
 on:
+  workflow_dispatch:
   push:
     paths:
     - robotframework-intellij/**
