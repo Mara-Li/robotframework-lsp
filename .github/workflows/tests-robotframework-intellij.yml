@@ -57,9 +57,6 @@ jobs:
         python -m dev vendor-robocorp-ls-core
         python -m dev vendor-robotframework-interactive
         python -m dev vendor-robotframework-output-stream
-    - name: Fix README references
-      working-directory: ./robotframework-ls    
-      run: python -m dev fix-readme
     - name: Build wheel
       working-directory: ./robotframework-ls/src
       run: |
