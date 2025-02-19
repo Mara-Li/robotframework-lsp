@@ -64,7 +64,10 @@ public class RobotRunAction extends AnAction {
 
         // log and case
         args.add("-d");
-        args.add("$ProjectFileDir$/log");
+        args.add("$ProjectFileDir$/output");
+        args.add("--include");
+        args.add("tnr");
+        args.add("--nostatusrc");
         // if name is null then run this file
         if (name == null) {
             runConfiguration.setName("run current file");
